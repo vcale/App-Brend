@@ -10,7 +10,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Tu CSS existente (sin cambios) */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -85,20 +84,20 @@
       overflow: hidden;
       border-right: 2px solid #6b48ff;
       position: absolute;
-      animation: rotateText 8s steps(40) infinite, blink 0.50s step-end infinite;
+      animation: rotateText 6s steps(40) infinite, blink 0.50s step-end infinite;
     }
     .subtitle:nth-child(1) { animation-delay: 0s; }
-    .subtitle:nth-child(2) { animation-delay: 2s; }
-    .subtitle:nth-child(3) { animation-delay: 4s; }
-    .subtitle:nth-child(4) { animation-delay: 6s; }
-    .subtitle:nth-child(5) { animation-delay: 8s; }
-    .subtitle:nth-child(6) { animation-delay: 10s; }
+    .subtitle:nth-child(2) { animation-delay: 1s; }
+    .subtitle:nth-child(3) { animation-delay: 2s; }
+    .subtitle:nth-child(4) { animation-delay: 3s; }
+    .subtitle:nth-child(5) { animation-delay: 4s; }
+    .subtitle:nth-child(6) { animation-delay: 5s; }
     @keyframes rotateText {
       0% { opacity: 0; width: 0; }
-      8% { opacity: 1; width: 0; }
-      25% { opacity: 1; width: 100%; }
-      33% { opacity: 1; width: 100%; }
-      41% { opacity: 0; width: 100%; }
+      10% { opacity: 1; width: 0; }
+      40% { opacity: 1; width: 100%; }
+      60% { opacity: 1; width: 100%; }
+      70% { opacity: 0; width: 100%; }
       100% { opacity: 0; width: 0; }
     }
     @keyframes blink {
@@ -713,7 +712,6 @@
       );
     }
 
-    // Usar createRoot en lugar de ReactDOM.render
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<App />);
   </script>
