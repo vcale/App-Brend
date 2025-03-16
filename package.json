@@ -1,0 +1,29 @@
+{
+  "name": "app-brend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcale/App-Brend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vcale/App-Brend/issues"
+  },
+  "homepage": "https://github.com/vcale/App-Brend#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-react": "^7.26.3"
+  },
+  "dependencies": {
+    "axios": "^1.8.3",
+    "react-router-dom": "^7.3.0"
+  }
+}
